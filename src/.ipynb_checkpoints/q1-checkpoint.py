@@ -12,8 +12,11 @@ def swap(x, y):
     if isinstance(y,(int,float)) == False:
         return -1
 
-    newx = y
-    newy = x
+    tempx = y
+    tempy = x
+
+    newx = tempx
+    newy = tempy
 
     print('X is now {0} and Y is now {1}'.format(newx,newy))
     return
