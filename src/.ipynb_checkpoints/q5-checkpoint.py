@@ -6,9 +6,23 @@ def check_divisibility(num, divisor):
     - Return True if num is divisible by divisor, False otherwise.
     """
 
+    # Checking if the number and divisor is s number
+    if isinstance(num,(int,float)) == False:
+        print('num is not a number')
+        return -1
+    if isinstance(divisor,(int,float)) == False:
+        print('divisor is not a number')
+        return -1
+
+    # Make sure divisor is not a zero
+    if divisor == 0:
+        print('divisor must not be a zero')
+        return -1
+    
     if num%divisor == 0:
         return True
     return False
+
 
 
 # Task 2

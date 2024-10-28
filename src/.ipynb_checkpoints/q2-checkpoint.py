@@ -5,6 +5,12 @@ def find_and_replace(lst, find_val, replace_val):
     - lst must be a list.
     - Return the modified list.
     """
+    
+    # Checking if lst is a list
+    if isinstance(lst, list) == False:
+        print("The input is not a list")
+        return -1
+
     new_lst = lst[:]
     for idx, each in enumerate(new_lst):
         if each == find_val:
